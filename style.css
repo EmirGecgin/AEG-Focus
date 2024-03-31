@@ -108,7 +108,7 @@ body {
 }
 
 .icon-part {
-    background: white;
+    background: #198754;
     width: 70px !important;
     height: 60px !important;
     border-radius: 10px;
@@ -132,6 +132,5 @@ body {
 }
 
 .form-control {
-    width: 250px !important;
     border: none !important;
 }
