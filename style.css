@@ -49,7 +49,7 @@ body {
 
 .information-p {
     position: relative;
-    margin-top: 250px !important;
+    margin-top: 200px !important;
 }
 
 .audio-part {
@@ -113,4 +113,25 @@ body {
     height: 60px !important;
     border-radius: 10px;
     margin: 180px 120px 10px 120px;
+}
+
+#iconbird {
+    cursor: pointer;
+}
+
+#iconrain {
+    cursor: pointer;
+}
+
+#iconwind {
+    cursor: pointer;
+}
+
+#iconsea {
+    cursor: pointer;
+}
+
+.form-control {
+    width: 250px !important;
+    border: none !important;
 }
