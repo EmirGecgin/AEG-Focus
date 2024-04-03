@@ -1,7 +1,5 @@
-getItemsFromLocale();
-
 function incrementNumberOfLooking() {
-    const defaultNumberOfLook = document.getElementById("looking-number");
+    let defaultNumberOfLook = document.getElementById("looking-number");
     let incrementNumberOfLook = Number(defaultNumberOfLook.textContent);
     incrementNumberOfLook += 1;
     defaultNumberOfLook.textContent = incrementNumberOfLook;
@@ -12,7 +10,7 @@ function incrementNumberOfLooking() {
 }
 
 function resetTheNumberOfLooking() {
-    const currentNumberOfLook = document.getElementById("looking-number");
+    let currentNumberOfLook = document.getElementById("looking-number");
     let reset = Number(currentNumberOfLook.textContent);
     reset = 0;
     currentNumberOfLook.textContent = reset;
@@ -22,7 +20,7 @@ function resetTheNumberOfLooking() {
     }
 }
 
-const storedNumber = localStorage.getItem("numberOfLooking");
+let storedNumber = localStorage.getItem("numberOfLooking");
 if (storedNumber) {
     let number = document.getElementById("looking-number")
     number.textContent = storedNumber;
@@ -92,8 +90,9 @@ function volumeAdjustment() {
 
 const taskButton = document.getElementById("task-button");
 const taskInput = document.getElementById("input-task");
-const taskList = document.getElementById("list-for-task");
+let taskList = document.getElementById("list-for-task");
 
+getItemsFromLocale();
 
 
 function addTask() {
@@ -114,7 +113,7 @@ function createTaskList(tasks) {
     taskLI.textContent = tasks;
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
-    deleteButton.className = "delete-button ";
+    deleteButton.className = "delete-button";
     taskLI.appendChild(deleteButton);
 
     deleteButton.addEventListener("click", function() {
