@@ -1,3 +1,5 @@
+getItemsFromLocale();
+
 function incrementNumberOfLooking() {
     const defaultNumberOfLook = document.getElementById("looking-number");
     let incrementNumberOfLook = Number(defaultNumberOfLook.textContent);
@@ -92,7 +94,7 @@ const taskButton = document.getElementById("task-button");
 const taskInput = document.getElementById("input-task");
 const taskList = document.getElementById("list-for-task");
 
-getItemsFromLocale();
+
 
 function addTask() {
     const task = taskInput.value.trim();
