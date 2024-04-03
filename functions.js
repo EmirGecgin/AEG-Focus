@@ -133,6 +133,6 @@ function saveTasksInLocale() {
 }
 
 function getItemsFromLocale() {
-    const getItems = JSON.parse(localStorage.getItem("taskItems"));
+    const getItems = JSON.parse(localStorage.getItem("taskItems")) || [];
     getItems.forEach(createTaskList);
 }
