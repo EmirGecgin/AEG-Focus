@@ -185,9 +185,13 @@
         margin: 0 auto;
     }
     
-    .form-control {
+    .form-control-list {
         border-radius: 10px 0px 0px 10px !important;
         border: none;
+    }
+    
+    .contact-form-control {
+        border-radius: 20px;
     }
     
     #task-button {
